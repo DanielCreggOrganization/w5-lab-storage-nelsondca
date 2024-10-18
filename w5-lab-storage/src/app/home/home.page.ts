@@ -28,6 +28,7 @@ export class HomePage {
     } catch (error) {
       console.error('Error setting item', error);
       this.output = `Error setting item: ${error}`;
+      throw error;
     }
   }
 
